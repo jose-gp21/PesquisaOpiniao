@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Opinião</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Pesquisa de Opinião</h1>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="text" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="escola">Onde você estuda:</label>
+        <input type="text" id="escola" name="escola" required>
+
+        <label for="cidade">Sua Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="aspectosEvento">Aspectos do Evento:</label>
+        <textarea id="aspectosEvento" name="aspectosEvento" rows="4" required></textarea>
+
+        <label>Como você avalia o evento?</label>
+        <select id="avaliacaoEvento" name="avaliacaoEvento" required>
+            <option value="excelente">Excelente</option>
+            <option value="bom">Bom</option>
+            <option value="razoavel">Razoável</option>
+            <option value="ruim">Ruim</option>
+            <option value="muitoRuim">Muito Ruim</option>
+        </select>
+
+        <label>Você indicaria o evento para um amigo?</label>
+        <div class="radio-group">
+            <input type="radio" id="sim" name="indicariaAmigo" value="sim" required>
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="indicariaAmigo" value="nao" required>
+            <label for="nao">Não</label>
+        </div>
+
+        <label for="comentarios">Comentários adicionais:</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
